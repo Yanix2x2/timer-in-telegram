@@ -21,9 +21,8 @@ def start_timers(chat_id, question):
     )
 
 
-def send_finish_message(chat_id, question):
-    message = ("Время вышло!")
-    bot.send_message(chat_id, message)
+def send_finish_message(chat_id):
+    bot.send_message(chat_id, "Время вышло!")
 
 
 def send_update_message(secs_left, chat_id, message_id, question):
